@@ -1,0 +1,133 @@
+/* ===========================
+   GALLERY HERO
+=========================== */
+
+.gallery-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  min-height: 60vh;
+  padding: var(--section-padding);
+
+  background-image: url("../../assets/images/restaurant-view-2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-color: rgba(66, 39, 29, 0.75);
+  background-blend-mode: multiply;
+
+  color: var(--white);
+}
+
+.gallery-hero h1 {
+  font-size: clamp(2.2rem, 5vw, var(--fs-h1));
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+}
+
+.gallery-hero .subtitle {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  color: var(--secondary);
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+/* ===========================
+   FILTER BUTTONS
+=========================== */
+
+.filter-btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin: var(--container-padding);
+  padding: 0 1rem;
+}
+
+/* ===========================
+   GALLERY GRID
+=========================== */
+
+.gallery-cards {
+  display: grid;
+
+  /* safer than 340px for mobile */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 1.5rem;
+
+  padding: var(--section-padding);
+}
+
+.gallery-cards img {
+  width: 100%;
+  height: 240px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  display: block;
+
+  transition: transform 0.3s ease;
+}
+
+.gallery-cards img:hover {
+  transform: scale(1.03);
+}
+
+/* ===========================
+   EMPTY STATE
+=========================== */
+
+.no-images {
+  text-align: center;
+
+  font-size: 1.1rem;
+
+  color: var(--primary);
+
+  padding: var(--section-padding);
+}
+
+.active {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+/* ===========================
+   RESPONSIVE FIXES
+=========================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .gallery-hero {
+    min-height: 50vh;
+    padding: 2rem 1rem;
+  }
+
+  .gallery-cards img {
+    height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .gallery-hero {
+    min-height: 45vh;
+  }
+
+  .gallery-cards {
+    gap: 1rem;
+  }
+}

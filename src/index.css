@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+:root {
+  --primary: #42271d;      /* Ethiopian brown */
+  --secondary: #C9A227;    /* gold */
+  --accent: #C0392B;       /* red highlight */
+  --bg: #FAFAFA;           /* clean background */
+  --text: #1F1F1F; 
+  --text-2: #ccc;  
+  --whatsapp: #25D366;      /* dark text */
+  --white: #FFFFFF;
+  --border: #EAEAEA;
+
+
+  /* Typography */
+  --fs-display: clamp(1.6rem, 4.5vw, 3.8rem);
+  --fs-h1: clamp(2rem, 5vw, 6rem);
+  --fs-h2: clamp(1.3rem, 3vw, 2.3rem);
+  --fs-h3: clamp(1.1rem, 2.2vw, 1.5rem);
+  --fs-body: clamp(0.95rem, 1.2vw, 1.2rem);
+  --fs-small: clamp(0.85rem, 1vw, 1rem);
+  --fs-headline: clamp(1.1rem, 3vw, 1.5rem);
+
+  /* ===========================
+   SPACING (FIXED)
+=========================== */
+
+  --section-padding: clamp(40px, 5vw, 80px);
+  --container-padding: clamp(16px, 4vw, 80px);
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

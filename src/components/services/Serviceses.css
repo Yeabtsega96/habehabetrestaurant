@@ -1,0 +1,157 @@
+/* ===========================
+   SERVICES SECTION
+=========================== */
+
+.serviceses-section {
+  padding: var(--section-padding);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+
+  position: relative;
+
+  text-align: center;
+}
+
+.serviceses-section .sub-tagline {
+  position: absolute;
+
+  top: 2rem;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  color: var(--secondary);
+
+  font-size: var(--fs-h4);
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.serviceses-section h2 {
+  font-size: var(--fs-h2);
+}
+
+.serviceses-section .hr {
+  width: 120px;
+  height: 3px;
+
+  background: var(--secondary);
+
+  border: none;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.serviceses-cards {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 2rem;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.serviceses-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+
+  text-align: left;
+
+  padding: 2rem;
+
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.serviceses-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 24px rgba(0,0,0,.08);
+}
+
+.serviceses-card .icon-span {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #fff6f3;
+
+  border: 1px solid var(--secondary);
+}
+
+.serviceses-card .icon {
+  font-size: 1.5rem;
+
+  color: var(--secondary);
+}
+
+.serviceses-card h3 {
+  font-size: var(--fs-h3);
+}
+
+.serviceses-card p {
+  color: var(--primary);
+
+  line-height: 1.7;
+}
+
+.serviceses-card ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: .75rem;
+}
+
+.serviceses-card li {
+  display: flex;
+  align-items: center;
+
+  gap: .5rem;
+
+  color: var(--primary);
+}
+
+.checkmark-icon {
+  color: green;
+
+  flex-shrink: 0;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .serviceses-section .sub-tagline {
+    position: static;
+
+    transform: none;
+  }
+
+  .serviceses-card {
+    padding: 1.5rem;
+  }
+}

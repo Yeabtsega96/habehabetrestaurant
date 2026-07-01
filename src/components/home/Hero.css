@@ -1,0 +1,109 @@
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  width: 100%;
+
+  min-height: 90vh;
+
+  padding: var(--section-padding);
+
+  gap: var(--container-padding);
+
+  overflow: hidden;
+
+  background-image: url("../../assets/images/habehabet-bg-img.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-color: rgba(66, 39, 29, 0.75);
+  background-blend-mode: multiply;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.tagline {
+  max-width: 700px;
+
+  font-size: clamp(2rem, 5vw, var(--fs-h1));
+  font-weight: 700;
+
+  letter-spacing: 0.08rem;
+
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.tagline span {
+  color: var(--secondary);
+}
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+.headline {
+  max-width: 700px;
+
+  font-size: var(--fs-headline);
+
+  color: var(--text-2);
+
+  line-height: 1.7;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btns {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* remove default link styling */
+.btns a {
+  text-decoration: none;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 80vh;
+  }
+
+  .btns {
+    gap: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 75vh;
+    padding: 2rem 1rem;
+  }
+
+  .tagline {
+    letter-spacing: 0.05rem;
+  }
+}

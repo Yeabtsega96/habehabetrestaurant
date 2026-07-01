@@ -1,0 +1,73 @@
+/* ===========================
+   FILTER WRAPPER
+=========================== */
+
+.menu-filter {
+  padding: var(--section-padding);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 1rem;
+}
+
+/* ===========================
+   FILTER BUTTON
+=========================== */
+
+.filter-btn {
+  border: 2px solid rgba(66, 39, 29, 0.5);
+
+  font-size: 0.95rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  padding: 0.5rem 0.9rem;
+
+  border-radius: 999px;
+
+  transition: all 0.25s ease;
+
+  cursor: pointer;
+}
+
+/* ICON */
+
+.filter-btn svg {
+  font-size: 1rem;
+}
+
+/* ===========================
+   ACTIVE STATE
+=========================== */
+
+.filter-btn.active {
+  background-color: var(--accent);
+  color: var(--bg);
+
+  border: 2px solid var(--accent);
+}
+
+/* ===========================
+   HOVER
+=========================== */
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   FOCUS (ACCESSIBILITY)
+=========================== */
+
+.filter-btn:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+}

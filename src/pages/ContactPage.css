@@ -1,0 +1,27 @@
+/* ===========================
+   CONTACT PAGE LAYOUT
+=========================== */
+
+.contact-container {
+  display: grid;
+
+  /* better than fixed 400px minimum */
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+
+  align-items: start;
+
+  gap: 2rem;
+
+  padding: var(--section-padding);
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+}

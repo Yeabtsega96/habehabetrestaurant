@@ -1,0 +1,161 @@
+/* ===========================
+   FEATURES SECTION
+=========================== */
+
+.features-section {
+  padding: var(--section-padding);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+
+  width: 100%;
+
+  background: rgb(255, 239, 239);
+
+  color: var(--text);
+
+  position: relative;
+
+  text-align: center;
+}
+
+.features-section .sub-tagline {
+  position: absolute;
+
+  top: 2rem;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: var(--fs-h4);
+
+  color: var(--secondary);
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.features-section h2 {
+  font-size: var(--fs-h2);
+}
+
+.features-section .hr {
+  width: 120px;
+  height: 3px;
+
+  background: var(--secondary);
+
+  border: none;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.features-cards {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 2rem;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.features-card {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  gap: 1rem;
+
+  padding: 2rem 1.5rem;
+
+  background: #fff;
+
+  border-radius: 16px;
+
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.features-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 25px rgba(0,0,0,.08);
+}
+
+.features-card .icon-span {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #fff6f3;
+}
+
+.features-card .icon {
+  font-size: 1.5rem;
+
+  color: var(--secondary);
+}
+
+.features-card h3 {
+  font-size: var(--fs-h4);
+
+  color: var(--text);
+}
+
+.features-card p {
+  color: var(--primary);
+}
+
+/* ===========================
+   ACCESSIBILITY
+=========================== */
+
+.features-card:focus-within {
+  outline: 3px solid var(--secondary);
+
+  outline-offset: 4px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .features-section .sub-tagline {
+    position: static;
+
+    transform: none;
+  }
+
+  .features-cards {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+
+  .features-card {
+    padding: 1.5rem 1rem;
+  }
+}

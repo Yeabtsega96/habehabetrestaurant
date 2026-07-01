@@ -1,0 +1,60 @@
+.about-hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 60vh;
+  width: 100%;
+  padding: 2rem 1rem;
+
+  background-image: url("../../assets/images/habehabet-bg-img.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-color: rgba(66, 39, 29, 0.75);
+  background-blend-mode: multiply;
+
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 800px;
+}
+
+.about-hero-subtitle {
+  margin-bottom: 0.75rem;
+
+  color: var(--secondary);
+  font-size: var(--fs-body);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.about-hero-section h1 {
+  color: var(--bg);
+  font-size: clamp(2rem, 5vw, var(--fs-h1));
+  letter-spacing: 0.08rem;
+  line-height: 1.2;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .about-hero-section {
+    min-height: 50vh;
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .about-hero-section {
+    min-height: 45vh;
+    padding: 2rem 1rem;
+  }
+
+  .about-hero-subtitle {
+    letter-spacing: 0.15rem;
+  }
+}

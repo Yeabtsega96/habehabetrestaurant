@@ -1,0 +1,77 @@
+/* ===========================
+   MENU HERO
+=========================== */
+
+.menu-hero {
+  padding: var(--section-padding);
+  margin-bottom: var(--container-padding);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  height: 60vh;
+
+  background-image: url("../../assets/images/dorowet-img.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-color: rgba(66, 39, 29, 0.75);
+  background-blend-mode: multiply;
+
+  color: var(--bg);
+}
+
+/* ===========================
+   SUBTITLE
+=========================== */
+
+.menu-hero .subtitle {
+  font-size: var(--fs-h3);
+  color: var(--secondary);
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.menu-hero h1 {
+  font-size: var(--fs-h1);
+
+  color: var(--bg);
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+
+  line-height: 1.1;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .menu-hero {
+    height: 50vh;
+    padding: 2rem;
+  }
+
+  .menu-hero h1 {
+    font-size: calc(var(--fs-h1) * 0.8);
+  }
+
+  .menu-hero .subtitle {
+    font-size: var(--fs-h4);
+  }
+}
