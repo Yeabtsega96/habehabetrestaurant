@@ -1,21 +1,23 @@
 import "./team.css";
-import DorowetImg from "../../assets/images/dorowet-img.avif";
+import TigistImg from "../../assets/images/tigst-chef.jpg";
+import SelamImg from "../../assets/images/coffee-girl.jpg";
+import DawitImg from "../../assets/images/dawit-chef.jpg";
 
 const teamMembers = [
   {
     name: "Tigist Bekele",
     role: "Head Chef & Founder",
-    image: DorowetImg,
+    image: TigistImg,
   },
   {
     name: "Dawit Haile",
     role: "Sous Chef",
-    image: DorowetImg,
+    image: DawitImg,
   },
   {
     name: "Selam Tesfaye",
     role: "Coffee Master",
-    image: DorowetImg,
+    image: SelamImg,
   },
 ];
 

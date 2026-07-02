@@ -21,7 +21,7 @@ const menuData = [
     name: "Doro Wat",
     description:
       "Slow-cooked chicken in rich berbere spice sauce, served on injera.",
-    price: 180,
+    price: 1080,
     category: "traditional",
     popular: true,
     image: Dorowot,
@@ -31,7 +31,7 @@ const menuData = [
     name: "Kitfo",
     description:
       "Ethiopian-style minced beef seasoned with mitmita and kibbe butter.",
-    price: 220,
+    price: 820,
     category: "traditional",
     popular: true,
     image: kitfo,
@@ -73,7 +73,7 @@ const menuData = [
     name: "Shiro",
     description:
       "Ground chickpea flour stew, velvety and deeply spiced.",
-    price: 110,
+    price: 180,
     category: "vegetarian",
     popular: false,
     image: ShiroWot,
@@ -93,7 +93,7 @@ const menuData = [
     name: "Tikil Gomen",
     description:
       "Cabbage and carrots cooked with turmeric and mild spices.",
-    price: 90,
+    price: 180,
     category: "vegetarian",
     popular: false,
     image: TikilGomen,
@@ -105,7 +105,7 @@ const menuData = [
     name: "Zilzil Tibs",
     description:
       "Strips of tender beef, pan-seared with rosemary and jalapeño.",
-    price: 250,
+    price: 850,
     category: "meat",
     popular: true,
     image: ZilzilTbs,
@@ -115,7 +115,7 @@ const menuData = [
     name: "Kitfo Special",
     description:
       "Premium minced beef with ayib fresh cheese and gomen greens.",
-    price: 280,
+    price: 1200,
     category: "meat",
     popular: false,
     image: KitfoSpecial,
@@ -125,7 +125,7 @@ const menuData = [
     name: "Lamb Tibs",
     description:
       "Succulent lamb pieces sautéed with onions and hot peppers.",
-    price: 240,
+    price: 940,
     category: "meat",
     popular: true,
     image: LambTibs
@@ -135,7 +135,7 @@ const menuData = [
     name: "Beef Stew",
     description:
       "Slow-braised beef in aromatic spiced sauce over spongy injera.",
-    price: 200,
+    price: 800,
     category: "meat",
     popular: false,
     image: BeefStew,
@@ -147,7 +147,7 @@ const menuData = [
     name: "Ethiopian Coffee",
     description:
       "Traditional jebena buna — three rounds of freshly roasted coffee.",
-    price: 60,
+    price: 80,
     category: "drinks",
     popular: true,
     image: EthCoffee,
@@ -157,7 +157,7 @@ const menuData = [
     name: "Tej (Honey Wine)",
     description:
       "Traditional Ethiopian honey mead, lightly fermented and sweet.",
-    price: 80,
+    price: 200,
     category: "drinks",
     popular: true,
     image: Tej,
@@ -167,7 +167,7 @@ const menuData = [
     name: "Tej Special",
     description:
       "Aged honey wine with a deeper, richer flavor profile.",
-    price: 100,
+    price: 300,
     category: "drinks",
     popular: false,
     image: TejSpecial,
@@ -177,7 +177,7 @@ const menuData = [
     name: "Fresh Juice",
     description:
       "Seasonal fresh fruit juice — mango, avocado, or passion fruit.",
-    price: 50,
+    price: 150,
     category: "drinks",
     popular: false,
     image: FreshJuice,

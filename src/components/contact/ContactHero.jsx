@@ -1,12 +1,18 @@
-import "./contact.css"
+import "./contact.css";
 
 const ContactHero = () => {
   return (
-    <section className="contact-hero">
-      <span className="subtitle">Get In Touch</span>
-      <h1>Contact Us</h1>
-    </section>
-  )
-}
+    <section
+      className="contact-hero"
+      aria-labelledby="contact-hero-title"
+    >
+      <p className="subtitle">Get In Touch</p>
 
-export default ContactHero
+      <h1 id="contact-hero-title">
+        Contact Us
+      </h1>
+    </section>
+  );
+};
+
+export default ContactHero;

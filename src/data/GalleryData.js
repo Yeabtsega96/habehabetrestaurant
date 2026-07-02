@@ -128,6 +128,7 @@ const galleryData = [
     title: "Fresh Juice",
     category: "drinks",
   },
+  
 ];
 
 export default galleryData;

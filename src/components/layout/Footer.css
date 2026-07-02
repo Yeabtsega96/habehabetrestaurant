@@ -29,6 +29,7 @@ footer {
 
 .footer-logo-section p {
   font-size: 1.1rem;
+  max-width: 300px;
 }
 
 .footer-contact {

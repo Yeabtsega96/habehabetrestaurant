@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import NavBar from "./NavBar";
 
 import "./MainLayout.css";
+import ScrollToTopButton from "../common/ScrollToTopButton";
 
 // Loader only for page content
 const PageLoader = () => (
@@ -43,6 +44,7 @@ const MainLayout = () => {
 
       {/* Always visible */}
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };
