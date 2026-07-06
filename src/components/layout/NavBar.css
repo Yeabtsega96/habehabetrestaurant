@@ -97,7 +97,7 @@
     top: 50px;
     right: -100%;
 
-    width: 280px;
+    max-width: 280px;
     height: calc(100vh - 70px);
 
     background: var(--primary);

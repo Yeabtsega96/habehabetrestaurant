@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 :root {
@@ -37,11 +36,13 @@
   --container-padding: clamp(16px, 4vw, 80px);
 }
 
+
+
 body {
   font-family: "poppins", sans-serif;
-  background-color: var(--bg);
+  overflow-x: hidden;
   color: var(--text);
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 
